@@ -94,7 +94,12 @@
     grid-row: 2 / 4;
     height: 600px;
 }
-
+.zoom{
+    transition: transform 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
 .footer > p{
     font-weight: 500;
     font-size: 14px;
