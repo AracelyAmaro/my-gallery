@@ -14,11 +14,13 @@
 .principal{
     margin: 40px 0px;
 }
-img{
+#foto-perfil{
+    height: 156px;
+    width: 156px;
     display: block;
     margin: auto;
     padding: 1.1em 1.5em;
-    border-radius: 16px;
+    border-radius: 16mm;
 }
 .name{
     line-height: 29px;
@@ -75,8 +77,10 @@ img{
     margin: 0;
     padding: 0;
     border-radius: 12px;
+    background-size: cover;
 }
 .primera-foto{
+    /* background-size: cover; */
     grid-column: 1 / 2;
 }
 .segunda-foto{
@@ -90,11 +94,47 @@ img{
     grid-row: 2 / 4;
     height: 600px;
 }
+
 .footer > p{
     font-weight: 500;
     font-size: 14px;
     text-align: center;
     color: #B9BDCF;
     margin-bottom: 1em;
+}
+a{
+    color: inherit;
+}
+@media screen and (max-width:480px) {
+    #foto-perfil{
+        width: 102px;
+        height: auto;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .city{
+        font-size: 10px;
+    }
+    .caja > *{
+        font-size: 11px;
+    }
+    .caja{
+        width: 78px;
+        height: 52px;
+        padding: 3px;
+    }
+    .gallery{
+        grid-template-columns: 110px 110px 110px;
+        gap: 6px;
+        padding: 1.5em 0,75em;
+
+    }
+    .cuarta-foto{
+        height: 220px;
+    }
+    .footer > p{
+        font-size: 10px;
+    }
 }
 
