@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+.principal > *{
+    display: flex;
+    justify-content: center;
+}
+.principal{
+    margin: 40px 0px;
+}
+img{
+    display: block;
+    margin: auto;
+    padding: 1.1em 1.5em;
+    border-radius: 16px;
+}
+.name{
+    line-height: 29px;
+    color: #4E5150;
+}
+.city{
+    line-height: 17px;
+    color: #A9A9A9;
+    margin-top:0.6em;
+}
+.secondary{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.caja{
+    background: #E5E5E5;
+    border-radius: 12px;
+    width: 100px;
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caja> h3{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E5150;
+}
+.caja > p{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+.gallery{
+    padding: 4em 2em;
+    /* width: 100vh; */
+    display: grid;
+    justify-content: center;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px 300px 300px;
+}
+.gallery > div{
+    border-radius: 12px;
+    background-position: 5% ;
+}
+.gallery> *{
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+}
+.primera-foto{
+    grid-column: 1 / 2;
+}
+.segunda-foto{
+    grid-column: 2 / 4;
+}
+.tercera-foto{
+    grid-column: 1/3;
+}
+.cuarta-foto{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    height: 600px;
+}
+.footer > p{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #B9BDCF;
+    margin-bottom: 1em;
+}
+
